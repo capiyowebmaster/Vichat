@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/gray"
+    android:layout_width="match_parent"
+    tools:context=".MainActivity"
+    android:layout_height="match_parent">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:civ_border_width="3dp"
+            app:civ_border_color="@color/crimson"
+            android:id="@+id/accountImageview"
+            android:layout_marginStart="20dp"
+            android:src="@mipmap/app_icon"
+            />
+        <TextView
+            android:fontFamily="sans-serif-black"
+            android:layout_width="wrap_content"
+            android:id="@+id/videoItemsUsername"
+            android:layout_marginLeft="100dp"
+            android:text="@string/app_name"
+            android:textSize="10sp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:fontFamily="sans-serif-black"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="@string/app_name"
+            android:textSize="15sp"
+            android:id="@+id/videoItemsEname"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+
+
+
+
+        <TextView
+            android:layout_marginTop="70dp"
+            android:layout_width="match_parent"
+            android:text="capiyo"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif"
+            android:id="@+id/videoMessage"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"/>
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/videoview"/>
+        <TextView
+            android:layout_marginTop="360dp"
+            android:layout_width="60dp"
+            android:id="@+id/comment"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="150dp"
+            android:background="@drawable/ic_baseline_add_comment_24"
+            android:layout_height="60dp"/>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/openMessaging"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ic_baseline_insert_comment_24"
+            android:layout_height="60dp"/>
+    <TextView
+        android:fontFamily="sans-serif-black"
+        android:layout_width="wrap_content"
+        android:textSize="50sp"
+        android:layout_marginLeft="20dp"
+        android:text="0"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/counter"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"/>
+    <com.like.LikeButton
+        android:layout_width="70dp"
+        android:layout_marginLeft="230dp"
+        android:layout_alignParentBottom="true"
+        app:icon_type="heart"
+        app:dots_secondary_color="@color/lime"
+        app:dots_primary_color="@color/lime"
+        app:circle_end_color="@color/lime"
+        android:id="@+id/likeButton"
+        android:layout_marginBottom="20dp"
+        android:outlineSpotShadowColor="@color/dorgerblue"
+        app:circle_start_color="@color/lime"
+        android:layout_height="70dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/lime"
+        android:layout_alignParentBottom="true"
+        android:layout_height="5dp"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vichat">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SecondTheme">
+        <activity android:name=".MainActivity"
+            android:exported="false"/>
+        <activity android:name=".Messaging"
+            android:exported="false"/>
+        <activity android:name=".SendingImages"
+            android:exported="false"/>
+        <activity android:name=".PostStatus"
+            android:exported="false"/>
+        <activity android:name=".PostVideo"
+            android:exported="false"/>
+        <activity android:name=".Register"
+            android:exported="false"/>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

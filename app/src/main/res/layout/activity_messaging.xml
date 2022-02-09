@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/gray"
+    android:layout_height="wrap_content"
+    tools:context=".Messaging">
+    <include layout="@layout/second_toolbar"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+         android:layout_width="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="60dp"
+         android:id="@+id/messaginRecyclerView"
+         android:layout_height="wrap_content"/>
+
+        <EditText
+        android:layout_width="300dp"
+        android:layout_marginLeft="50dp"
+        android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:minHeight="50dp"
+            android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+            android:layout_alignParentBottom="true"
+            android:hint="reply message"
+            android:textColorHint="@color/black"
+        android:background="@drawable/edit_text_background"
+        android:id="@+id/replyText"/>
+    <TextView
+        android:layout_width="50dp"
+        android:layout_marginLeft="330dp"
+        android:layout_marginTop="300dp"
+        android:id="@+id/sendMessage"
+        android:background="@mipmap/send_avatar_foreground"
+        android:layout_alignParentBottom="true"
+        android:layout_height="50dp"/>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_marginTop="350dp"
+            android:id="@+id/sendImages"
+            android:visibility="visible"
+            android:background="@drawable/ic_baseline_add_a_photo_24"
+            android:layout_alignParentBottom="true"
+            android:layout_height="50dp"/>
+
+
+</RelativeLayout>

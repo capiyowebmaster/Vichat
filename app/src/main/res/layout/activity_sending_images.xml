@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/dorgerblue"
+    android:layout_height="match_parent"
+    tools:context=".SendingImages">
+    <include layout="@layout/second_toolbar"
+        />
+    <LinearLayout
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Open Gallery"
+            android:id="@+id/sOpenGallery"
+            android:layout_marginStart="60dp"
+            android:textColor="@color/crimson"
+            android:fontFamily="sans-serif-black"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:layout_height="400dp"
+            android:id="@+id/sImageview"/>
+        <EditText
+
+            android:layout_width="match_parent"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginStart="20dp"
+            android:id="@+id/caption"
+            android:padding="10dp"
+            android:maxHeight="100dp"
+            android:hint="add caption"
+            android:textColor="@color/black"
+            android:inputType="textMultiLine"
+            android:fontFamily="sans-serif"
+            android:textColorHint="@color/black"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"/>
+
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="250dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Send"
+            android:textColor="@color/black"
+            android:id="@+id/sendTextView"
+            android:textSize="30sp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

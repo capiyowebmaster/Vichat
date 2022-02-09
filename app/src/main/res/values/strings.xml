@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Vichat</string>
+    <string name="password">password</string>
+    <string name="confirm_password">confirm_password</string>
+    <string name="e_name">e-name</string>
+    <string name="username">username</string>
+    <string name="login_here">login_here</string>
+    <string name="Login">Login</string>
+    <string name="new_user">new_user</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+</resources>

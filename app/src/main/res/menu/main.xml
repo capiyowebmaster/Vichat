@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+      <item android:id="@+id/postVideo"
+          android:title="Post Video "
+          />
+    <item android:id="@+id/sellItem"
+        android:title="sell Item"/>
+    <item android:id="@+id/logout"
+        android:title="log out"/>
+
+</menu>
